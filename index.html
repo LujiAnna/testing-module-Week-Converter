@@ -2,29 +2,49 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf8'>
-  <title>your project name</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="./style.css" rel="stylesheet" />
+    <title>your project name</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" />
 
-  <!-- load the testing dependencies -->
-  <script src='./dependencies/chai.js'></script>
-  <script src='./dependencies/describe-it.js'></script>
-  <script>const assert = chai.assert;</script>
+    <!-- load the testing dependencies -->
+    <script src='./dependencies/chai.js'></script>
+    <script src='./dependencies/describe-it.js'></script>
+    <script>
+        const assert = chai.assert;
+    </script>
 
-  <!-- load the shared data -->
-  <script src='./scripts/script-variables.js'></script>
+    <!-- Added: load the starter - tests -->
+    <!-- <script src='./scripts/user-actions/starter-with-tests.js'></script>
+    <script src='./scripts/user-actions/starter-without-tests.js'></script> -->
 
-  <!-- load the interaction scripts -->
-  <script src='./scripts/user-actions/_.js'></script>
+    <!-- load the shared data -->
+    <script src='./scripts/script-variables.js'></script>
 
+    <!-- load the interaction scripts -->
+    <script src='./scripts/user-actions/add-weeks.js'></script>
+    <script src='./scripts/user-actions/convert-days.js'></script>
+    <script src='./scripts/user-actions/convert-hours.js'></script>
+    <script src='./scripts/user-actions/convert-minutes.js'></script>
+    <script src='./scripts/user-actions/convert-seconds.js'></script>
+    <script src='./scripts/user-actions/convert-milliseconds.js'></script>
 
-  <!-- Leave this here!  It renders the review buttons  -->
-  <script src='./dependencies/review-buttons/init.js'></script>
+    <!-- Leave this here!  It renders the review buttons  -->
+    <script src='./dependencies/review-buttons/init.js'></script>
 
 </head>
 
 <body>
+
+    <button class='button_all btn btn-outline-secondary btn-lg btn-block' onclick='weeksHandler()'>Add amount of weeks</button>
+    <button class='button_all btn btn-outline-secondary btn-lg btn-block' onclick='daysHandler()'>Convert into days</button>
+    <button class='button_all btn btn-outline-secondary btn-lg btn-block' onclick='hoursHandler()'>Convert into hours</button>
+    <button class='button_all btn btn-outline-secondary btn-lg btn-block' onclick='minutesHandler()'>Convert into minutes</button>
+    <button class='button_all btn btn-outline-secondary btn-lg btn-block' onclick='secondsHandler()'>Convert into seconds</button>
+    <button class='button_all btn btn-outline-secondary btn-lg btn-block' onclick='millisecondsHandler()'>Convert into milliseconds</button>
 
 </body>
 
