@@ -7,6 +7,7 @@ function minutes_converterHandler (){
       else if(typeof weeks !=='number')
       alert(`please put a number`);
      
+      
       console.log('numbers of weeks '+weeks);
       console.log('weeks in minutes '+minutes+' min');
   }
