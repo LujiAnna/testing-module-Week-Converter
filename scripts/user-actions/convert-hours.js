@@ -8,8 +8,7 @@ function hours_converterHandler (){
     alert(`please put the numbers of  weeks `);
     else if(typeof weeks !=='number')
     alert(`please put a number`);
-
-    
+   
     console.log('numbers of weeks '+weeks);
     console.log('weeks in hours '+hours+'h');
 }
