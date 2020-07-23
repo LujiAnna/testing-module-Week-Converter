@@ -1,6 +1,5 @@
 
 function hours_converterHandler (){
-  weeks=6;
     let hours=weeks*7*24;
     if(weeks!==0)
     alert(`the weeks in hours `+hours+'h');
