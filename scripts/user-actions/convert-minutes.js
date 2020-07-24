@@ -1,4 +1,5 @@
 function minutesHandler (){
+    
 let minutes=weeks*7*24*60;
 let message = `${weeks} week is equal to ${minutes} minutes`;
   alert(message);
