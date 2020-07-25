@@ -1,10 +1,13 @@
 'use strict';
 
 console.log('--- loading: convert-days.js');
-const daysHandler = () => {
 
-    let days;
-    days = 7 * weeks;
+const daysConverter = (weeks) => {
+    return weeks * 7;
+}
+
+const daysHandler = () => {
+    let days = daysConverter(weeks);
     let message = `${weeks} week(s) is equal to ${days} days`;
     alert(message);
     console.log(`weeks: ${weeks}, \ntypeof weeks: ${typeof(weeks)}`);
