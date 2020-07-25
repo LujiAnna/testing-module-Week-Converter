@@ -7,8 +7,8 @@ const weeksHandler = () => {
   if (!userInput) {
     return;
   }
-  if (isNaN(userInput)) { 
-      alert(`Please enter a number`);
+  if (isNaN(userInput) || userInput < 0) { 
+      alert(`Please enter a positive number`);
       return;
   }
   weeks = Number(userInput);
